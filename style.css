@@ -54,26 +54,28 @@ img {
 "piplup piplup"
 "chimchar cyndaquil"
 "torchic torchic"; 
+grid-template-columns: 200px 300px;
+grid-template-rows: 150px 200px 300px 200px;
 }
 
 .mudkip  {
- grid area: mudkip;
+ grid-area: mudkip;
 }
 
 .piplup {
- grid area: piplup;
+ grid-area: piplup;
 }
 
 .chimchar {
- grid area: chimchar;
+ grid-area: chimchar;
 }
 
 .cyndaquil {
-  grid area: cyndaquil;
+  grid-area: cyndaquil;
 }
 
 .torchic{
-   grid area: torchic;
+   grid-area: torchic;
 }
 
 .overlap-grid {
@@ -81,14 +83,15 @@ img {
   grid-template: repeat(4, 20px) / repeat(4, 1fr);}
 
 .one {
-
+grid-area: 1 / 1 / 5 / 3;
 }
 
 .two {
-
+grid-area: 1 / 3 / 5 / 5;
 }
 
 .over {
-
+grid-area: 2 / 2 / 4 / 4;
+z-index: 10;
 }
 
